@@ -1,0 +1,1 @@
+cronapi-watson-visual-recognition
