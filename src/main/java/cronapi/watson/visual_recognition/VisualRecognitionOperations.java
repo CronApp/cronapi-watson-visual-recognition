@@ -7,14 +7,10 @@ import cronapi.CronapiMetaData;
 
 import java.util.Map;
 
-@CronapiMetaData(categoryName = "Watson Visual Recognition",
-    categoryTags = {"Watson", "Visual", "Recognition"})
+@CronapiMetaData
 public final class VisualRecognitionOperations {
 
-  @CronapiMetaData(
-      name = "{{classifyName}}",
-      description = "{{classifyDescription}}"
-  )
+  @CronapiMetaData
   public static ClassifiedImages classify(String versionDate, String apiKey, String endPoint,
                                           Map<String, String> headers, ClassifyOptions options) {
     VisualRecognition service = new VisualRecognition(versionDate);
@@ -24,10 +20,7 @@ public final class VisualRecognitionOperations {
     return service.classify(options).execute();
   }
 
-  @CronapiMetaData(
-      name = "{{detectFacesName}}",
-      description = "{{detectFacesDescription}}"
-  )
+  @CronapiMetaData
   public static DetectedFaces detectFaces(String versionDate, String apiKey, String endPoint,
                                           Map<String, String> headers, DetectFacesOptions options) {
     VisualRecognition service = new VisualRecognition(versionDate);
@@ -38,10 +31,7 @@ public final class VisualRecognitionOperations {
     return service.detectFaces(options).execute();
   }
 
-  @CronapiMetaData(
-      name = "{{createClassifierName}}",
-      description = "{{createClassifierDescription}}"
-  )
+  @CronapiMetaData
   public static Classifier createClassifier(String versionDate, String apiKey, String endPoint,
                                             Map<String, String> headers, CreateClassifierOptions options) {
     VisualRecognition service = new VisualRecognition(versionDate);
@@ -52,10 +42,7 @@ public final class VisualRecognitionOperations {
     return service.createClassifier(options).execute();
   }
 
-  @CronapiMetaData(
-      name = "{{deleteClassifierName}}",
-      description = "{{deleteClassifierDescription}}"
-  )
+  @CronapiMetaData
   public static void deleteClassifier(String versionDate, String apiKey, String endPoint,
                                       Map<String, String> headers, DeleteClassifierOptions options) {
     VisualRecognition service = new VisualRecognition(versionDate);
@@ -66,10 +53,7 @@ public final class VisualRecognitionOperations {
     service.deleteClassifier(options).execute();
   }
 
-  @CronapiMetaData(
-      name = "{{getClassifierName}}",
-      description = "{{getClassifierDescription}}"
-  )
+  @CronapiMetaData
   public static Classifier getClassifier(String versionDate, String apiKey, String endPoint,
                                          Map<String, String> headers, GetClassifierOptions options) {
     VisualRecognition service = new VisualRecognition(versionDate);
@@ -80,10 +64,7 @@ public final class VisualRecognitionOperations {
     return service.getClassifier(options).execute();
   }
 
-  @CronapiMetaData(
-      name = "{{listClassifiersName}}",
-      description = "{{listClassifiersDescription}}"
-  )
+  @CronapiMetaData
   public static Classifiers listClassifiers(String versionDate, String apiKey, String endPoint,
                                             Map<String, String> headers, ListClassifiersOptions options) {
     VisualRecognition service = new VisualRecognition(versionDate);
@@ -94,10 +75,7 @@ public final class VisualRecognitionOperations {
     return service.listClassifiers(options).execute();
   }
 
-  @CronapiMetaData(
-      name = "{{updateClassifierName}}",
-      description = "{{updateClassifierDescription}}"
-  )
+  @CronapiMetaData
   public static Classifier updateClassifier(String versionDate, String apiKey, String endPoint,
                                             Map<String, String> headers, UpdateClassifierOptions updateClassifierOptions) {
     VisualRecognition service = new VisualRecognition(versionDate);
